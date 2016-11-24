@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Junior
+ * @author Beatriz, Donizete e Luciano
  */
 public class TabelaDeDados extends javax.swing.JFrame {
 

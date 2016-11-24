@@ -15,7 +15,7 @@ import svacee.model.DadoConsumo;
 
 /**
  *
- * @author Junior
+ * @author Beatriz, Donizete e Luciano
  */
 public class TelaInicial extends javax.swing.JFrame {
 
@@ -140,7 +140,7 @@ public class TelaInicial extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jMenu1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jMenu1.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         jMenu1.setText("ARQUIVO");
 
         jMenuItem2.setText("Obter Dados de CSV");
@@ -161,7 +161,7 @@ public class TelaInicial extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jMenu2.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         jMenu2.setText("VIZUALIZAR");
 
         jMenuItem4.setText("Dados Tabular");
@@ -177,10 +177,15 @@ public class TelaInicial extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jMenu3.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         jMenu3.setText("AJUDA");
 
         jMenuItem6.setText("SOBRE Pollus Móveis");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem6);
 
         jMenuItem7.setText("Sobre SVACEE");
@@ -243,6 +248,11 @@ public class TelaInicial extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         buscarArquivoCSV();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        SobrePollusMoveis obj = new SobrePollusMoveis();
+        obj.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
