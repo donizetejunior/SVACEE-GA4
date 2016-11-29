@@ -7,14 +7,14 @@ package svacee.gui;
 
 /**
  *
- * @author Aluno
+ * @author Paulo
  */
-public class SobrePollusMoveis extends javax.swing.JFrame {
+public class SobreDesenvolvedores extends javax.swing.JFrame {
 
     /**
-     * Creates new form SobrePollusMoveis
+     * Creates new form SobreDesenvolvedores
      */
-    public SobrePollusMoveis() {
+    public SobreDesenvolvedores() {
         initComponents();
     }
 
@@ -32,34 +32,33 @@ public class SobrePollusMoveis extends javax.swing.JFrame {
         textArea1 = new java.awt.TextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(825, 603));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/svacee/gui/imgens/logo2.png"))); // NOI18N
 
-        textArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        textArea1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        textArea1.setName(""); // NOI18N
-        textArea1.setText("Sua casa é o seu lugar.\nE não há sensação mais agradável que entrar em seu espaço e sentir-se acolhido e confortável.\n\nAlém de deixar sua casa mais aconchegante, os móveis Pollus agregam equilíbrio e sofisticação ao seu jeito de morar, \ntransformando seus ambientes em lugares de puro bem-estar.\n\nE há uma razão especial pela qual um móvel Pollus se adapta tão bem ao seu corpo e ao seu dia a dia. \nSempre alinhada com as tendências mundiais, a Pollus trabalha com tecnologia e materiais selecionados,\no que se traduz em produtos de alta qualidade e design arrojado, conferindo funcionalidade e ergonomia perfeita. \n\nMas, acima de toda a beleza e versatilidade, um móvel Pollus é feito para durar.\nÉ feito para criar, junto com você, a sua história. \n\nMais que espaços, a Pollus deixa sua casa mais cheia de vida. Inspire-se.");
+        textArea1.setText("Somos Alunos do Terceiro ano do Instituto Federal de Votuporanga, \nBeatriz, Donizete e Luciano, que realizamos o projeto proposto pelo\nprofessor Osvandre Martins e buscamos atende-los da melhor forma. \n\nContatos: \nbeatrizqueiroz469@gmail.com\ndonizetejuniorIFSP@gmail.com\nlucianofilho@gmail.com");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(461, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(311, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(82, 82, 82)
+                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,20 +92,20 @@ public class SobrePollusMoveis extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreDesenvolvedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreDesenvolvedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreDesenvolvedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreDesenvolvedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SobrePollusMoveis().setVisible(true);
+                new SobreDesenvolvedores().setVisible(true);
             }
         });
     }

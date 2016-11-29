@@ -7,14 +7,14 @@ package svacee.gui;
 
 /**
  *
- * @author Aluno
+ * @author Paulo
  */
-public class SobrePollusMoveis extends javax.swing.JFrame {
+public class SobreSVACEE extends javax.swing.JFrame {
 
     /**
-     * Creates new form SobrePollusMoveis
+     * Creates new form SobreSVACEE
      */
-    public SobrePollusMoveis() {
+    public SobreSVACEE() {
         initComponents();
     }
 
@@ -32,34 +32,33 @@ public class SobrePollusMoveis extends javax.swing.JFrame {
         textArea1 = new java.awt.TextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(825, 603));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/svacee/gui/imgens/logo2.png"))); // NOI18N
 
-        textArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        textArea1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        textArea1.setName(""); // NOI18N
-        textArea1.setText("Sua casa é o seu lugar.\nE não há sensação mais agradável que entrar em seu espaço e sentir-se acolhido e confortável.\n\nAlém de deixar sua casa mais aconchegante, os móveis Pollus agregam equilíbrio e sofisticação ao seu jeito de morar, \ntransformando seus ambientes em lugares de puro bem-estar.\n\nE há uma razão especial pela qual um móvel Pollus se adapta tão bem ao seu corpo e ao seu dia a dia. \nSempre alinhada com as tendências mundiais, a Pollus trabalha com tecnologia e materiais selecionados,\no que se traduz em produtos de alta qualidade e design arrojado, conferindo funcionalidade e ergonomia perfeita. \n\nMas, acima de toda a beleza e versatilidade, um móvel Pollus é feito para durar.\nÉ feito para criar, junto com você, a sua história. \n\nMais que espaços, a Pollus deixa sua casa mais cheia de vida. Inspire-se.");
+        textArea1.setText("Sistema de Visualização, Análise e Consumo de Energia Elétrica (SVACEE)\n\nÉ um sistema com o objetivo de analisar os dados de consumo de energia elétrica\n oferecidas pela empresa e gerar de forma visual a partir de gráficos controlar o \nconsumo de energia da empresa.\n");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(461, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(269, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(55, Short.MAX_VALUE)
+                .addComponent(textArea1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(155, 155, 155)
+                .addComponent(jLabel1))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,20 +92,20 @@ public class SobrePollusMoveis extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreSVACEE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreSVACEE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreSVACEE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SobrePollusMoveis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreSVACEE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SobrePollusMoveis().setVisible(true);
+                new SobreSVACEE().setVisible(true);
             }
         });
     }
