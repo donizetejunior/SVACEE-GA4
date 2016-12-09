@@ -44,22 +44,30 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace pref="461" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="364" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="235" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                          <Component id="textArea1" min="-2" pref="640" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="117" max="32767" attributes="0"/>
               </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="textArea1" min="-2" pref="640" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              </Group>
+              <Component id="jLabel2" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" pref="76" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="textArea1" min="-2" pref="273" max="-2" attributes="0"/>
-                  <EmptySpace pref="32" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="268" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -82,6 +90,15 @@
             </Property>
             <Property name="name" type="java.lang.String" value="" noResource="true"/>
             <Property name="text" type="java.lang.String" value="Sua casa &#xe9; o seu lugar.&#xa;E n&#xe3;o h&#xe1; sensa&#xe7;&#xe3;o mais agrad&#xe1;vel que entrar em seu espa&#xe7;o e sentir-se acolhido e confort&#xe1;vel.&#xa;&#xa;Al&#xe9;m de deixar sua casa mais aconchegante, os m&#xf3;veis Pollus agregam equil&#xed;brio e sofistica&#xe7;&#xe3;o ao seu jeito de morar, &#xa;transformando seus ambientes em lugares de puro bem-estar.&#xa;&#xa;E h&#xe1; uma raz&#xe3;o especial pela qual um m&#xf3;vel Pollus se adapta t&#xe3;o bem ao seu corpo e ao seu dia a dia. &#xa;Sempre alinhada com as tend&#xea;ncias mundiais, a Pollus trabalha com tecnologia e materiais selecionados,&#xa;o que se traduz em produtos de alta qualidade e design arrojado, conferindo funcionalidade e ergonomia perfeita. &#xa;&#xa;Mas, acima de toda a beleza e versatilidade, um m&#xf3;vel Pollus &#xe9; feito para durar.&#xa;&#xc9; feito para criar, junto com voc&#xea;, a sua hist&#xf3;ria. &#xa;&#xa;Mais que espa&#xe7;os, a Pollus deixa sua casa mais cheia de vida. Inspire-se."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="36" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Sobre a Empresa Parceira Pollus M&#xf3;veis"/>
           </Properties>
         </Component>
       </SubComponents>

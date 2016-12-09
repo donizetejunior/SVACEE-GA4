@@ -9,12 +9,17 @@ import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import svacee.model.DadoConsumo;
 
 public class DadoConsumoCtrl {
 
     private File arquivoCSV;
+    private int testeArq;
+    
     private List<DadoConsumo> tabelaDadosCSV = new ArrayList<>();
+    private List<String> pontoColetaLista = new ArrayList<>();
+    private List<DadoConsumo> graficoLista = new ArrayList<>();
 
     public void obterDadosCSV(File arq) throws FileNotFoundException, IOException {
 
@@ -45,7 +50,26 @@ public class DadoConsumoCtrl {
 
                 getTabelaDadosCSV().add(dc);
             }
+        }
+        setTesteArq(2);
+    }
+    
+    public void preencherPontoColeta() {
+        for (DadoConsumo sdc : getTabelaDadosCSV()) {
+            if (!pontoColetaLista.contains(sdc.getIdColeta())) {
+                getPontoColetaLista().add(sdc.getIdColeta());
+            }
+        }
+    }
 
+    public void preencherGrafico(String item) {
+        for (DadoConsumo sdc : getTabelaDadosCSV()) {
+            if (sdc.getIdColeta().equalsIgnoreCase(item)) {
+                sdc.getDataHora();
+                sdc.getValorKwH();
+                getGraficoLista().add(sdc);
+
+            }
         }
     }
 
@@ -65,4 +89,29 @@ public class DadoConsumoCtrl {
         this.tabelaDadosCSV = tabelaDadosCSV;
     }
 
+    public int getTesteArq() {
+        return testeArq;
+    }
+
+    public void setTesteArq(int testeArq) {
+        this.testeArq = testeArq;
+    }
+
+    public List<String> getPontoColetaLista() {
+        return pontoColetaLista;
+    }
+
+    public void setPontoColetaLista(List<String> pontoColetaLista) {
+        this.pontoColetaLista = pontoColetaLista;
+    }
+
+    public List<DadoConsumo> getGraficoLista() {
+        return graficoLista;
+    }
+
+    public void setGraficoLista(List<DadoConsumo> graficoLista) {
+        this.graficoLista = graficoLista;
+    }
+
+    
 }
