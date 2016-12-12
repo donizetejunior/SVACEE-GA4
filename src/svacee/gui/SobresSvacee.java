@@ -108,18 +108,21 @@ public class SobresSvacee extends javax.swing.JFrame {
         // TODO add your handling code here:
         SobrePollusMoveis obj = new SobrePollusMoveis();
         obj.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jBSobrePollusActionPerformed
 
     private void jBSobreSVACEEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSobreSVACEEActionPerformed
         // TODO add your handling code here:
         SobreSVACEE obj = new SobreSVACEE();
         obj.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jBSobreSVACEEActionPerformed
 
     private void jBSobreDesenvolvedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSobreDesenvolvedoresActionPerformed
         // TODO add your handling code here:
         SobreDesenvolvedores obj = new SobreDesenvolvedores();
         obj.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jBSobreDesenvolvedoresActionPerformed
 
     /**

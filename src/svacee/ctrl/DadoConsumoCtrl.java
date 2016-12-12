@@ -51,7 +51,7 @@ public class DadoConsumoCtrl {
                 getTabelaDadosCSV().add(dc);
             }
         }
-        setTesteArq(2);
+        setTesteArq(1);
     }
     
     public void preencherPontoColeta() {
@@ -68,7 +68,6 @@ public class DadoConsumoCtrl {
                 sdc.getDataHora();
                 sdc.getValorKwH();
                 getGraficoLista().add(sdc);
-
             }
         }
     }
@@ -112,6 +111,4 @@ public class DadoConsumoCtrl {
     public void setGraficoLista(List<DadoConsumo> graficoLista) {
         this.graficoLista = graficoLista;
     }
-
-    
 }

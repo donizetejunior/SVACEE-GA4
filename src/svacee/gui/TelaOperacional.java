@@ -23,14 +23,14 @@ import svacee.model.DadoConsumo;
 /**
  * @author Beatriz, Donizete e Luciano
  */
-public class TelaInicial extends javax.swing.JFrame {
+public class TelaOperacional extends javax.swing.JFrame {
 
     DadoConsumoCtrl dcc = new DadoConsumoCtrl();
     String itemSelecionado;
     private Object sdcc;
     
     
-    public TelaInicial() {
+    public TelaOperacional() {
         initComponents();
         jBArqCSV.setToolTipText("Obter dados de arquivo CSV");
         jBDadosTabular.setToolTipText("Visualizar Dados Tabular");
@@ -40,6 +40,40 @@ public class TelaInicial extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
+
+    
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(TelaPrincipalSvacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(TelaPrincipalSvacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(TelaPrincipalSvacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(TelaPrincipalSvacee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new TelaPrincipalSvacee().setVisible(true);
+            }
+        });
+    }
+    
     
     public void buscarArquivoCSV() {
 
@@ -83,9 +117,9 @@ public class TelaInicial extends javax.swing.JFrame {
     }
 
     public void plotarGrafico() {
-        if (dcc.getTesteArq()== 2) {
-            if (jtpAbas.getTabCount() == 4) {
-                jtpAbas.remove(3);
+        if (dcc.getTesteArq()== 1) {
+            if (jtpAbas.getTabCount() == 3) {
+                jtpAbas.remove(2);
             }
 
             JPanel grafico = createChartPanel();
@@ -100,6 +134,7 @@ public class TelaInicial extends javax.swing.JFrame {
     }
 
     private JPanel createChartPanel() {
+        
         String chartTitle = "Gráfico de Consumo: " + itemSelecionado;
         String xAxisLabel = "Hora (Hora,minuto)";
         String yAxisLabel = "Valor KwH (Quilowatt-hora)";
@@ -506,6 +541,8 @@ public class TelaInicial extends javax.swing.JFrame {
         itemSelecionado = item;
     }//GEN-LAST:event_jcbPontoColetaActionPerformed
 
+    
+    
     private void jbVisualizarGraficoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVisualizarGraficoActionPerformed
         plotarGrafico();
     }//GEN-LAST:event_jbVisualizarGraficoActionPerformed

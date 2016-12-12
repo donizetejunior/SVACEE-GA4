@@ -46,19 +46,26 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
+              <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="textArea1" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel2" pref="371" max="32767" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="textArea1" alignment="1" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel2" pref="335" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="351" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
-              <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -66,13 +73,23 @@
               <Group type="102" alignment="1" attributes="0">
                   <Component id="jLabel3" min="-2" pref="72" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textArea1" min="-2" pref="247" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jLabel1" max="32767" attributes="0"/>
-                      <Component id="jLabel2" max="32767" attributes="0"/>
+                  <Component id="textArea1" min="-2" pref="221" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="175" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace pref="41" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -87,7 +104,8 @@
         </Component>
         <Component class="java.awt.TextArea" name="textArea1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="     O software SVACEE V 1.0 foi desenvolvido por alunos do Ensino M&#xe9;dio do Instituto Federal campus &#x9;Votuporanga, orientado pelo Professor e Dsc. Osvandre Alves Martins.&#xa;    Este software foi desenvolvido utilizando a linguagem de programa&#xe7;&#xe3;o Java e a IDE NetBeans. O desenvolvimento deste software foi fruto de um projeto que o Professor e Dsc. Osvandre realizou na Finlandia, este requeria uma empresa parceira, sendo a empresa Polus M&#xf3;veis a escolhida.&#xa;&#xa;Contatos: &#xa;&#xa;  Alunos Desenvolvedores:&#xa;Beatriz Queiroz - beatrizqueiroz469@gmail.com&#xa;Donizete Correia Jr. - donizetejuniorIFSP@gmail.com&#xa;Luciano Filho - lucianofilho@gmail.com&#xa;&#xa;  Orientador:&#xa;Osvandre Alves Martins - osvandre@gmail.com&#xa;&#xa;Vers&#xe3;o do Software:  V 1.0"/>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="text" type="java.lang.String" value="     O software SVACEE V 1.0 foi desenvolvido por alunos do Ensino M&#xe9;dio do Instituto Federal campus &#x9;Votuporanga, orientado pelo Professor e Dsc. Osvandre Alves Martins.&#xa;    Este software foi desenvolvido utilizando a linguagem de programa&#xe7;&#xe3;o Java e a IDE NetBeans. O desenvolvimento deste software foi fruto de um projeto que o Professor e Dsc. Osvandre realizou na Finlandia, este requeria uma empresa parceira, sendo a empresa Polus M&#xf3;veis a escolhida.&#xa;&#xa;Contatos: &#xa;  Alunos Desenvolvedores:&#xa;Beatriz Queiroz - beatrizqueiroz469@gmail.com&#xa;Donizete Correia Jr. - donizetejuniorIFSP@gmail.com&#xa;Luciano Filho - lucianofilho@gmail.com&#xa;&#xa;  Orientador:&#xa;Osvandre Alves Martins - osvandre@gmail.com&#xa;Vers&#xe3;o do Software:  V 1.0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
@@ -105,6 +123,28 @@
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Sobre os Desenvovedores do Software"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="18" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Voltar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="18" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sair"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
